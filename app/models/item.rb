@@ -1,6 +1,7 @@
 class Item < ApplicationRecord
   belongs_to :user
   has_one :order
+  has_many :comments
 
   # 値が入っているか検証
   with_options presence: true do
